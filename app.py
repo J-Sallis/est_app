@@ -20,22 +20,22 @@ legal_costs = st.sidebar.number_input(
     "Legal & Incorporation Fees ($)", min_value=0, max_value=10000, value=3700
 )
 renovation_costs = st.sidebar.number_input(
-    "Renovation Costs ($)", min_value=0, max_value=50000, value=15000
+    "Renovation Costs ($)", min_value=0, max_value=50000, value=2500
 )
 equipment_deposit = st.sidebar.number_input(
-    "Equipment Security Deposit ($)", min_value=0, max_value=10000, value=5000
+    "Equipment Security Deposit ($)", min_value=0, max_value=10000, value=2500
 )
 initial_supplies = st.sidebar.number_input(
-    "Initial Supplies & Inventory ($)", min_value=0, max_value=10000, value=3000
+    "Initial Supplies & Inventory ($)", min_value=0, max_value=10000, value=1500
 )
 website_setup = st.sidebar.number_input(
-    "Website & Booking System Setup ($)", min_value=0, max_value=5000, value=3000
+    "Website & Booking System Setup ($)", min_value=0, max_value=5000, value=300
 )
 security_deposit = st.sidebar.number_input(
-    "Rent Security Deposit ($)", min_value=0, max_value=15000, value=7500
+    "Rent Security Deposit ($)", min_value=0, max_value=15000, value=2500
 )
 other_startup = st.sidebar.number_input(
-    "Other Startup Costs ($)", min_value=0, max_value=10000, value=2000
+    "Other Startup Costs ($)", min_value=0, max_value=10000, value=1000
 )
 
 # Calculate total startup costs
@@ -52,25 +52,25 @@ total_startup_costs = (
 # Revenue Parameters
 st.sidebar.subheader("Revenue Parameters")
 clients_per_month = st.sidebar.number_input(
-    "Target Clients per Month", min_value=1, max_value=200, value=40
+    "Target Clients per Month", min_value=1, max_value=200, value=20
 )
 average_fee = st.sidebar.number_input(
-    "Average Service Fee ($)", min_value=100, max_value=1000, value=300
+    "Average Service Fee ($)", min_value=100, max_value=1000, value=200
 )
 
 # Fixed Costs
 st.sidebar.subheader("Monthly Fixed Costs")
 rent_cost = st.sidebar.number_input(
-    "Rent ($)", min_value=0, max_value=10000, value=2500
+    "Rent ($)", min_value=0, max_value=10000, value=1200
 )
 equipment_lease = st.sidebar.number_input(
-    "Equipment Lease ($)", min_value=0, max_value=5000, value=2500
+    "Equipment Lease ($)", min_value=0, max_value=5000, value=900
 )
 insurance_cost = st.sidebar.number_input(
     "Insurance ($)", min_value=0, max_value=2000, value=300
 )
 marketing_cost = st.sidebar.number_input(
-    "Marketing ($)", min_value=0, max_value=3000, value=500
+    "Marketing ($)", min_value=0, max_value=3000, value=250
 )
 software_cost = st.sidebar.number_input(
     "Software/Booking Systems ($)", min_value=0, max_value=500, value=150
@@ -89,7 +89,7 @@ supplies_per_client = st.sidebar.number_input(
     "Supplies Cost per Client ($)", min_value=0, max_value=100, value=20
 )
 utilities_per_month = st.sidebar.number_input(
-    "Monthly Utilities ($)", min_value=0, max_value=1000, value=400
+    "Monthly Utilities ($)", min_value=0, max_value=1000, value=200
 )
 credit_card_fee_percent = st.sidebar.slider(
     "Credit Card Processing Fee (%)", 1.5, 4.0, 2.9, 0.1
@@ -102,7 +102,7 @@ loan_amount = st.sidebar.number_input(
 )
 interest_rate = st.sidebar.slider("Interest Rate (%)", 5.0, 15.0, 9.0, 0.5)
 loan_term_years = st.sidebar.selectbox("Loan Term (Years)", [3, 5, 7, 10], 1)
-down_payment_percent = st.sidebar.slider("Down Payment (%)", 10, 50, 30, 5)
+down_payment_percent = st.sidebar.slider("Down Payment (%)", 10, 100, 30, 5)
 
 # Display Startup Costs Breakdown
 st.subheader("Startup Costs Breakdown")
